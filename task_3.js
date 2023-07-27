@@ -5,6 +5,7 @@
 
 function count_freq(given){
 	let obj = {}
+	//This map function builds the object such that the keys are the elements of the given array and the values are the frequencies of the respective elements
 	given.map(digit=>{
 		if(!(digit in obj)){
 			obj[digit] = 1
@@ -13,7 +14,7 @@ function count_freq(given){
 			obj[digit] += 1
 		}
 	})
-	
+	//This find function now finds out that single key which has the maximum value, in other words the element with the most frequency
 	let res = Object.keys(obj).find(singlekey=>{
 		return obj[singlekey] === Math.max(...Object.values(obj))
 	})

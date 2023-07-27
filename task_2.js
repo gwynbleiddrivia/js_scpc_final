@@ -6,6 +6,7 @@
 
 function pos_sum(given){
 	let sum = 0
+	//This map function just sums up the element of the array if they are positive
 	given.map(digit=>{
 		if(digit>=0){
 			sum+=digit

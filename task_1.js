@@ -6,6 +6,7 @@
 function rev_string(given){
 	let rev_given = ""
 	const len = given.length
+	//This for loop concatenates rev_given from the last element of the given array, in this way a reverse string is produced
 	for(let i=len-1;i>=0;i--){
 		rev_given+=given[i]
 	}
